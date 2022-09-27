@@ -132,17 +132,45 @@ This project took focus and time to complete and the consistant problem of getti
 
 
 
-## NextAssignment
+## button counter
 
-### Description & Code
-
+### this was a bit more dificult than the earlier assignments but over all not too complexe as i had done this before last year.
 ```python
-Code goes here
+import board
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+from digitalio import DigitalInOut, Direction, Pull # set up code
 
+# get and i2c object
+i2c = board.I2C()       # button set up 
+btn = DigitalInOut(board.D3) 
+btn.direction = Direction.INPUT
+btn.pull = Pull.UP
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16) # lCD set up 
+cur_state = True  # setting up boolean 
+prev_state = True
+buttonPress = 0
+
+while True: # basic while loop
+    cur_state = btn.value  # setting button to current state
+    if cur_state != prev_state:  # if statment for button press
+        if not cur_state:      # if not current position 
+            buttonPress = buttonPress + 1  # counts 
+           lcd.clear()                     # clears laps message
+            lcd.set_cursor_pos(0, 0)  # cursor position
+            lcd.set_cursor_pos(1, 0)
+            lcd.print("BTN Press:")  # displays btn press on lcd
+            lcd.print(str(buttonPress))
+        else:
+            lcd.clear()  # clears lcd 
+
+    prev_state = cur_state  # closes while loop
 ```
 
-### Evidence
 
 ### Wiring
+![increment-decrement-counter-arduino-1024x585](https://user-images.githubusercontent.com/71406784/192609663-81f87442-9b0f-44db-a81c-4deeca209c86.png)
 
 ### Reflection
+this wasnt too hard as i have done it before but i want to thank Anton for help on the code. i have already done a reflection on this last year.
