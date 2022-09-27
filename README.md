@@ -4,8 +4,8 @@ This repository will actually serve as a aid to help you get started with your o
 * [Table of Contents](#TableOfContents)
 * [circuitPython](#CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
-* [CircuitPython_LCD](#CircuitPython_LCD)
-* [ButtonCounter](#ButtonCounter)
+* [CircuitPython_sensor](#CircuitPython_sensor)
+* [ButtonCounter_LCD](#ButtonCounter_LCD)
 ---
 
 # CPyProjectTemplate
@@ -77,7 +77,7 @@ I didnt have any real problems this project, just had to set up all the wires an
 
 
 
-## CircuitPython_LCD
+## CircuitPython_sensor
 
 ### Description & Code
 
@@ -161,7 +161,7 @@ This project took focus and time to complete and the consistant problem of getti
 
 
 
-##ButtonCounter
+#ButtonCounter_LCD
 
 #### this was a bit more dificult than the earlier assignments but over all not too complex as I had done this before last year.
 ```python
