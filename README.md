@@ -163,7 +163,7 @@ This project took focus and time to complete and the consistant problem of getti
 
 #ButtonCounter_LCD
 
-#### this was a bit more dificult than the earlier assignments but over all not too complex as I had done this before last year.
+#### this was a bit more dificult than the earlier assignments but over all not too complex as I had done this before last year. I have the wiring diagram from online.
 ```python
 import board
 from lcd.lcd import LCD
