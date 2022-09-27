@@ -134,7 +134,7 @@ This project took focus and time to complete and the consistant problem of getti
 
 ##ButtonCounter
 
-### this was a bit more dificult than the earlier assignments but over all not too complexe as i had done this before last year.
+#### this was a bit more dificult than the earlier assignments but over all not too complex as I had done this before last year.
 ```python
 import board
 from lcd.lcd import LCD
