@@ -4,7 +4,7 @@ This repository will actually serve as a aid to help you get started with your o
 * [Table of Contents](#TableOfContents)
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_LCD](#CircuitPython_LCD)
-* [botton counter](#ButtonCounter)
+* [ButtonCounter](#ButtonCounter)
 ---
 
 
