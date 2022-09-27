@@ -4,7 +4,7 @@ This repository will actually serve as a aid to help you get started with your o
 * [Table of Contents](#TableOfContents)
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_LCD](#CircuitPython_LCD)
-* [NextAssignmentGoesHere](#NextAssignment)
+* [botton counter](#ButtonCounter)
 ---
 
 
@@ -132,7 +132,7 @@ This project took focus and time to complete and the consistant problem of getti
 
 
 
-## button counter
+##ButtonCounter
 
 ### this was a bit more dificult than the earlier assignments but over all not too complexe as i had done this before last year.
 ```python
